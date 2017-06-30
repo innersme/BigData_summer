@@ -26,10 +26,11 @@ for i in range(num_day):
         print("",end="")
         
 
-문제: 연도를 입력값으로 하는 함수를 만들어 보시오. 
+문제: 입력값이 존재하는 달력을 출력하는 함수를 만들어 보시오. 
 """
 def viewMonth(_blank,_month,_num_day):
     year = 2017
+    #_변수를 쓰는 이유? 본문의 내용 변경을 최소화 하기 위해
     month = _month
     num_day = _num_day
     blank = _blank
@@ -47,3 +48,7 @@ def viewMonth(_blank,_month,_num_day):
     return
 
 viewMonth(6, 7, 31)
+
+"""
+
+"""
