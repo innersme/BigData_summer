@@ -11,7 +11,7 @@ def Print(string):
     print("\n")
     print("-----%s-----"%string)
 
-
+"""
 # 다른 데이터 타입도 출력 가능하다.; 이 경우 데이터 타입이 다르므로 쓸모가 없음.
 temps = [1, 2, 3, 5, 6, 3.0, True, 'hi']
 print(temps)
@@ -69,9 +69,12 @@ numbers = [2, 8, 9, 1, 6]
 for i in range(len(numbers)): #len(numbers) = 5  즉, range(5)
     print(numbers[i]) #numbers[0, 1, 2, 3, 4, 5] #why? range(5) = [0,1,2,3,4]
     
+"""
 
 """
 문제: numbers를 오름차순 순서로 배열하시오.
-numbers = [2, 8, 9, 1, 6]
 """
+
+numbers = [2, 8, 9, 1, 6]
+
     
