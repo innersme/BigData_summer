@@ -26,7 +26,7 @@ def isPrimeNumber(number):
     if(count == 2):
         #만약 그렇다면, 결과는 true이다.
         flag = True
-    #응답을 하자.
+    #응답을 하자. / 외부에게 알려주어야한다.
     return flag 
 
 #checkNumber변수에 함수결과값을 대입하자

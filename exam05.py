@@ -34,6 +34,8 @@ else :
 #주어진 수가 2에서 100까지 소수는 몇 개니?
 
 #count_sum_ex는 for에 독립적이어야 한다.
+#누적시키는 아이디어 많이 쓰이지 ?
+#초기화를 한다. 
 count_sum_ex = 0
 for j in range(2,101):
     number_ex = j
