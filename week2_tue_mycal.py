@@ -31,19 +31,24 @@ data를 순서대로 취급하는 방법
 데이터의 CRUD작업 
 1.생성 2.조회 3.갱신 4.삭제
 
+핵심로직과 관리로직
 
 """
-def viewMonth(_month):
-    year = 2017
+import calendar
+def viewMonth(year,_month):
+    result = calendar.monthrange(year,_month)
     #_변수를 쓰는 이유? 본문의 내용 변경을 최소화 하기 위해
+    #calendar.monthrange[0]의 결과가 index로 출력되므로 보정을 위해 + 1 이 필요하다. 
+    space = result[0] + 1 
     month = _month
+    num_day = result[1]
     #리스트 : 
     #정보의 중복; 첫 날을 계산해내는 알고리즘을 만든다.
     
-    num_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    num_day = num_days[_month - 1]
-    spaces = [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5]
-    space = spaces[_month - 1]
+    #num_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    #num_day = num_days[_month - 1]
+    #spaces = [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5]
+    
     
     print('\t\t\t%d %d'%(year,month))
     print("Sun\tMon\tTue\tWed\tTur\tFri\tSat")
@@ -56,8 +61,3 @@ def viewMonth(_month):
             print("",end="")
     print("\n")
     return
-
-for i in range(1,13):
-    viewMonth(i)
-
-
