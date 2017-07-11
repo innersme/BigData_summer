@@ -32,9 +32,10 @@ data를 순서대로 취급하는 방법
 1.생성 2.조회 3.갱신 4.삭제
 
 핵심로직과 관리로직
-
+모듈을 이용해서 필요한 자료를 생성해서 사용하는게 목표
 """
 import calendar
+#year 의 파라미터가 필요해
 def viewMonth(year,_month):
     result = calendar.monthrange(year,_month)
     #_변수를 쓰는 이유? 본문의 내용 변경을 최소화 하기 위해
@@ -42,6 +43,7 @@ def viewMonth(year,_month):
     space = result[0] + 1 
     month = _month
     num_day = result[1]
+    
     #리스트 : 
     #정보의 중복; 첫 날을 계산해내는 알고리즘을 만든다.
     

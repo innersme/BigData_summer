@@ -6,6 +6,7 @@ Created on Wed Jul  5 16:31:06 2017
 """
 import random
 word = 'internationalization'
+# 
 length = int(len(word)*0.2)
 position_index = []
 for i in range(length):
@@ -26,3 +27,4 @@ for i in position_index:
         print("존재한다. ")
     else:
         print("존재하지 않음")
+        

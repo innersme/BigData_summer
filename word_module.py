@@ -19,7 +19,7 @@ abcd 와 abc_ 를 조회하는데,
 import random
 #wordlist: string
 
-wordlist = 'cofe,aply,pocket,google,water,programming,disappointed,neighbor,pronunciation,dangerous'
+wordlist = 'coffee,apply,pocket,google,water,programming,disappointed,neighbor,pronunciation,dangerous'
 
 #wordlist: list
 word = wordlist.split(',')
@@ -33,8 +33,8 @@ def changeword(word,e_word):
         for item in range(len(word_l)):
             if e_word == word_l[item]:
                 word_l[item] = '_'        
-    word_p = "".join(word_l)
-    return word_p
+    #"".join(word_l)
+    return word_l
 
 #변경할 단어 갯수 선정 함수
 def wordnumber(word):
@@ -64,15 +64,17 @@ def outputlist(word):
     return changedlist
 
 #인덱스를 입력받아 word 를 changedword로 
+
+
 def change(word,charword,index):
     chword = word[:index]+charword+word[index+1:]
     return chword
 
 
 changed = outputlist(word)
-#word만큼 반복
+print(changed)
 
-
+"""
 for i in range(len(word)):
     #문제 출제
     while True:
@@ -94,3 +96,4 @@ for i in range(len(word)):
             print("입력값: %s, 틀렸습니다. 다시 시도하세요.\n"%change)
 
 print("10개를 모두 맞추셨습니다. 축하드립니다.")
+"""
