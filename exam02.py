@@ -3,9 +3,10 @@
 Created on Thu Jun 29 09:17:05 20174
 
 @author: user
+for 문 사용하기
 """
 
-"""
+
 number = 123456
 sum = 0
 
@@ -16,7 +17,6 @@ for i in range(6):
     number = number // 10 
 
 print('sum =>' , sum)
-"""
 
 print('range(1,10) & i')
 for i in range(1,10):

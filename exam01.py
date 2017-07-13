@@ -3,6 +3,8 @@
 Created on Wed Jun 28 16:42:25 2017
 
 @author: user
+
+EX 123456을 한자리 수로 나눠서 출력하라.
 """
 
 num_1 = 123456
