@@ -1,5 +1,4 @@
 # 빅데이터 웹프로그래밍
-<br>
 
 이 과정은 멀티캠퍼스에서 주최한 2017년 여름계절학기 빅데이터 웹프로그래밍과목을 공부한 프로젝트입니다.
 
@@ -20,7 +19,7 @@ baseball 게임입니다.
 
 ## Project3:
 정보처리기사 예제 문제입니다.
-
+![example3](https://github.com/innersme/BigData_summer/blob/master/project03_정보처리기사/실기.png)
 ## Project4:
 주어진 csv자료를 바탕으로 데이터를 분석하는 프로젝트입니다.
 
